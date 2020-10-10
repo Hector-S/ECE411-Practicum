@@ -4,3 +4,5 @@
   * Alejandro (Alex) Rios
   * Hector Soto
   * Richard Atherton
+
+License: GNU General Public License v3.0
