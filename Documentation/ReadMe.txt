@@ -12,6 +12,7 @@ B can have a max value of 9.
 
 C = Minor Revision: Format fixes or typo/grammar fixes.
 C can be any value.
+Example: 3.027 (C = 27)
 
 ---| Block Diagrams |---
 Block diagrams for the Product Design Specification were made in
