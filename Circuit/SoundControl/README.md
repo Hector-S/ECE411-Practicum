@@ -1,5 +1,5 @@
 
-##File Descriptions
+## File Descriptions
 
 **411SoundControl_200mW_4v.asc :** Uses a 3.3v analog input and a 4.5v DC supply to provide a 200mW max power output across an 8ohm speaker. Power output can be easily increased if Vin or the BJT gain is lower than expected by increasing the DC power supply above the 2N3904 transistor.
 
