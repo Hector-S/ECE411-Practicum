@@ -1035,28 +1035,6 @@ F 3 "" H 5850 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R RS0
-U 1 1 5FB79ADD
-P 5400 4150
-F 0 "RS0" V 5480 4150 50  0000 C CNN
-F 1 "1" V 5400 4150 50  0000 C CNN
-F 2 "" V 5330 4150 50  0001 C CNN
-F 3 "" H 5400 4150 50  0001 C CNN
-	1    5400 4150
-	0    1    1    0   
-$EndComp
-$Comp
-L R POT0
-U 1 1 5FB7A30A
-P 6450 3850
-F 0 "POT0" V 6530 3850 50  0000 C CNN
-F 1 "POT" V 6450 3850 50  0000 C CNN
-F 2 "" V 6380 3850 50  0001 C CNN
-F 3 "" H 6450 3850 50  0001 C CNN
-	1    6450 3850
-	0    1    1    0   
-$EndComp
-$Comp
 L R RS1
 U 1 1 5FB7A4C7
 P 6650 4050
@@ -1082,7 +1060,7 @@ F 3 "" H 6040 3400 50  0001 C CNN
 $EndComp
 Text Notes 5200 4050 0    60   ~ 0
 Sound\nControl\nModule
-Text Label 4000 4150 0    60   ~ 0
+Text Label 4500 4100 0    60   ~ 0
 AUDIO
 Wire Wire Line
 	5050 1900 5050 2750
@@ -1484,13 +1462,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 3850 6050 3850
 Wire Wire Line
-	6600 3850 6650 3850
-Wire Wire Line
-	6650 3850 6650 3900
-Wire Wire Line
-	6150 3850 6300 3850
-Wire Wire Line
-	6150 3650 6150 3850
+	6150 3650 6150 4000
 Wire Wire Line
 	6050 3850 6050 3650
 Wire Notes Line
@@ -1502,13 +1474,117 @@ Wire Notes Line
 Wire Notes Line
 	5200 3750 5200 4550
 Wire Wire Line
-	5250 4150 4800 4150
+	4800 4150 5550 4150
 Wire Wire Line
 	4800 4150 4800 4100
 Wire Wire Line
 	4800 4100 4450 4100
 Wire Wire Line
-	4450 4150 4450 4100
+	4450 4100 4450 4150
+$Comp
+L R RS0
+U 1 1 5FB8F39C
+P 5400 4300
+F 0 "RS0" V 5480 4300 50  0000 C CNN
+F 1 "1K" V 5400 4300 50  0000 C CNN
+F 2 "" V 5330 4300 50  0001 C CNN
+F 3 "" H 5400 4300 50  0001 C CNN
+	1    5400 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5FB8FCE1
+P 5400 4450
+F 0 "#PWR?" H 5400 4200 50  0001 C CNN
+F 1 "GND" H 5400 4300 50  0000 C CNN
+F 2 "" H 5400 4450 50  0001 C CNN
+F 3 "" H 5400 4450 50  0001 C CNN
+	1    5400 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_02x03_Counter_Clockwise J0
+U 1 1 5FB988B2
+P 4300 3650
+F 0 "J0" H 4350 3850 50  0000 C CNN
+F 1 "Programmer Header" H 4350 3450 50  0000 C CNN
+F 2 "" H 4300 3650 50  0001 C CNN
+F 3 "" H 4300 3650 50  0001 C CNN
+	1    4300 3650
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3050 4150 4450 4150
+	3800 3550 4100 3550
+$Comp
+L GND #PWR?
+U 1 1 5FB9D618
+P 3800 3550
+F 0 "#PWR?" H 3800 3300 50  0001 C CNN
+F 1 "GND" H 3800 3400 50  0000 C CNN
+F 2 "" H 3800 3550 50  0001 C CNN
+F 3 "" H 3800 3550 50  0001 C CNN
+	1    3800 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 3650 3800 3650
+Text Label 3800 3650 0    60   ~ 0
+MOSI
+Text Label 3550 4050 0    60   ~ 0
+MOSI
+Wire Wire Line
+	3550 4050 3050 4050
+Wire Wire Line
+	4100 3750 3800 3750
+Text Label 3800 3750 0    60   ~ 0
++3.3V
+Text Label 4700 3550 0    60   ~ 0
+MISO
+Wire Wire Line
+	4600 3550 4700 3550
+Wire Wire Line
+	4600 3650 4700 3650
+Wire Wire Line
+	4600 3750 4700 3750
+Wire Wire Line
+	4450 4150 3050 4150
+Text Label 3550 4150 0    60   ~ 0
+MISO
+Text Label 4700 3650 0    60   ~ 0
+SCK
+Text Label 3550 4250 0    60   ~ 0
+SCK
+Text Label 4700 3750 0    60   ~ 0
+RST
+Text Label 3550 5200 0    60   ~ 0
+RST
+Text Notes 4050 3400 0    60   ~ 0
+Programmer Header
+Wire Notes Line
+	3600 3300 5000 3300
+Wire Notes Line
+	5000 3300 5000 3900
+Wire Notes Line
+	5000 3900 3600 3900
+Wire Notes Line
+	3600 3900 3600 3300
+$Comp
+L POT RV0
+U 1 1 5FBAF02A
+P 6450 3850
+F 0 "RV0" V 6275 3850 50  0000 C CNN
+F 1 "POT" V 6350 3850 50  0000 C CNN
+F 2 "" H 6450 3850 50  0001 C CNN
+F 3 "" H 6450 3850 50  0001 C CNN
+	1    6450 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 3850 6650 3900
+Wire Wire Line
+	6600 3850 6650 3850
+Wire Wire Line
+	6150 4000 6450 4000
+NoConn ~ 6300 3850
 $EndSCHEMATC
