@@ -127,24 +127,24 @@ $EndComp
 $Comp
 L Battery BT0
 U 1 1 5FB42C0E
-P 750 900
-F 0 "BT0" H 850 1000 50  0000 L CNN
-F 1 "9V" H 850 900 50  0000 L CNN
-F 2 "" V 750 960 50  0001 C CNN
-F 3 "" V 750 960 50  0001 C CNN
-	1    750  900 
-	-1   0    0    1   
+P 1050 750
+F 0 "BT0" H 1150 850 50  0000 L CNN
+F 1 "9V" H 1150 750 50  0000 L CNN
+F 2 "" V 1050 810 50  0001 C CNN
+F 3 "" V 1050 810 50  0001 C CNN
+	1    1050 750 
+	0    -1   -1   0   
 $EndComp
 $Comp
 L GND #PWR?
 U 1 1 5FB42D1E
-P 750 700
-F 0 "#PWR?" H 750 450 50  0001 C CNN
-F 1 "GND" H 750 550 50  0000 C CNN
-F 2 "" H 750 700 50  0001 C CNN
-F 3 "" H 750 700 50  0001 C CNN
-	1    750  700 
-	-1   0    0    1   
+P 1250 750
+F 0 "#PWR?" H 1250 500 50  0001 C CNN
+F 1 "GND" H 1250 600 50  0000 C CNN
+F 2 "" H 1250 750 50  0001 C CNN
+F 3 "" H 1250 750 50  0001 C CNN
+	1    1250 750 
+	0    -1   -1   0   
 $EndComp
 $Comp
 L C C0
@@ -1368,19 +1368,15 @@ Wire Wire Line
 	1600 1150 1800 1150
 Wire Wire Line
 	1650 1200 1650 1150
-Connection ~ 750  1850
 Wire Wire Line
-	750  1850 1000 1850
+	650  1850 1000 1850
 Wire Wire Line
-	750  2550 1000 2550
-Connection ~ 750  1150
+	650  2550 1000 2550
 Connection ~ 950  1150
 Wire Wire Line
-	950  1150 950  1200
+	950  900  950  1200
 Wire Wire Line
-	750  1150 1000 1150
-Wire Wire Line
-	750  1100 750  2550
+	650  1150 1000 1150
 Wire Wire Line
 	4800 1900 5100 1900
 Wire Wire Line
@@ -1658,4 +1654,38 @@ Text Notes 5150 2300 0    60   ~ 0
 Yellow
 Text Notes 5150 2000 0    60   ~ 0
 Black
+$Comp
+L SW_Push SW3
+U 1 1 5FBFFF54
+P 650 950
+F 0 "SW3" H 700 1050 50  0000 L CNN
+F 1 "Power Switch" H 650 890 50  0000 C CNN
+F 2 "" H 650 1150 50  0001 C CNN
+F 3 "" H 650 1150 50  0001 C CNN
+	1    650  950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	650  750  850  750 
+Wire Wire Line
+	650  1150 650  2550
+Connection ~ 650  1850
+$Comp
+L D D5
+U 1 1 5FC0512F
+P 1250 900
+F 0 "D5" H 1250 1000 50  0000 C CNN
+F 1 "D" H 1250 800 50  0000 C CNN
+F 2 "" H 1250 900 50  0001 C CNN
+F 3 "" H 1250 900 50  0001 C CNN
+	1    1250 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1150 1750 900 
+Wire Wire Line
+	1750 900  1400 900 
+Connection ~ 1750 1150
+Wire Wire Line
+	1100 900  950  900 
 $EndSCHEMATC

@@ -1654,4 +1654,8 @@ Wire Notes Line
 	6350 1500 6350 550 
 Wire Notes Line
 	8050 3100 8050 500 
+Text Notes 5150 2300 0    60   ~ 0
+Yellow
+Text Notes 5150 2000 0    60   ~ 0
+Black
 $EndSCHEMATC
