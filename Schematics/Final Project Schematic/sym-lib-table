@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name 74HCT125)(type Legacy)(uri ${KIPRJMOD}/74HCT125/74HCT125.lib)(options "")(descr ""))
+  (lib (name EXT_POWER)(type Legacy)(uri ${KIPRJMOD}/EXT_POWER/EXT_POWER.lib)(options "")(descr ""))
+)
